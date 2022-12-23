@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  text-shadow: 3px 3px 3px black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+header p{
+  text-shadow: 2px 2px 1px black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+header nav a {
+  text-shadow: 1px 1px 1px black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.caledonie {
+  background-image: url(../image/caledonie.webp);
+}
+
+.about-me {
+  background-image: url(../image/about-me.webp);
+}
+.competence {
+  background-image: url(../image/bureau.jpg);
+}
+.about-me h2 {
+  text-shadow: 12px 12px 10px black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.about-me p {
+  text-shadow: 2px 2px 2px black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.competence h2 {
+  text-shadow: 6px 6px 8px black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.competence p {
+  text-shadow: 0 0 6px black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.scrollednav {
+  background: rgb(55 65 81);
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  transition: 0.7s;
+}
+.scolledlinks {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  transition: 0.7s;
+}
