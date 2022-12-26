@@ -591,6 +591,14 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -621,6 +629,10 @@ video {
 
 .flex-1{
   flex: 1 1 0%;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -830,6 +842,99 @@ header nav a {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
   transition: 0.7s;
+}
+
+/* Card Portofolio */
+
+.card {
+  width:30em;
+  height:30em;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.card-inner {
+  position:relative;
+  width: 100%;
+  height:100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position:absolute;
+  height:100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding:16px;
+  border-radius:8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-front {
+  background-size:cover;
+  background-position:center center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.morpion {
+  background-image:url('../image/morpion.jpg');
+}
+
+.site {
+  background-image:url('../image/site.bmp');
+}
+
+.reseau {
+  background-image:url('../image/serveur.jpg');
+}
+
+.card-front:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: linear-gradient(0deg, black, transparent);
+}
+
+.card-front .card-content {
+  z-index: 1;
+  color:white;
+}
+
+.card-front .card-content p {
+  color:#ececec;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back p {
+  margin-top:12px;
+}
+
+.card-front {
+  transition: opacity .6s;
+}
+
+.card:hover .card-front {
+  opacity:0;
 }
 
 .hover\:h-12:hover{

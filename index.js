@@ -3,7 +3,7 @@ $(function() {
   var links = $(".nav-link");
   $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      if (scroll >= 50) {
+      if (scroll > 0) {
           header.addClass("scrollednav");
           links.addClass("scrolledlinks");
       } else {
@@ -12,5 +12,4 @@ $(function() {
           
       }
   });
-
 });
